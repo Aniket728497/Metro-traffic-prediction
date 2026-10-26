@@ -78,7 +78,7 @@ Performance across key development milestones (evaluated on training and validat
 
 ## Final Model Performance
 
-The finalized Random Forest model (`max_depth=30`, `min_samples_leaf=4`, `max_features=0.6139`, `max_samples=0.9972`) was evaluated once on the strictly held-out test set:
+The finalized Random Forest model was evaluated once on the strictly held-out test set:
 
 | Metric | Test Set Score |
 |--------|:--------------:|
@@ -99,6 +99,82 @@ print(f"-> Predicted traffic: {predict_traffic(298.0, 17, 1, 7, 0,0,0,0,0,0,0,0,
 
 print(f"-> Predicted traffic: {predict_traffic(265.0, 3, 6, 1, 0,0,0,0,0,0,0,1,1):.2f} cars/hour")
 # → Predicted traffic volume is ~411 cars/hour (Snowy overnight traffic on a winter Sunday)```
-
+```
 ---
 
+## 📁 Project Structure
+
+```text
+Metro-Interstate-Traffic-Volume-Prediction/
+│
+├── Metro_Traffic_Prediction.ipynb       # Main end-to-end Jupyter Notebook
+│                                          (EDA, preprocessing, tuning, visualizations)
+├── Metro_Interstate_Traffic_Volume.csv  # Raw dataset
+├── requirements.txt                     # Python dependencies
+├── .gitignore                            # Git ignore rules for cache and system files
+└── README.md                             # Project documentation
+```
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Aniket728497/Metro-traffic-prediction.git
+
+cd metro-traffic-prediction
+```
+
+### 2. Set Up a Virtual Environment and Install Dependencies
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment.
+
+**Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS:**
+
+```bash
+source venv/bin/activate
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Launch the Jupyter Notebook
+
+Ensure that `Metro_Interstate_Traffic_Volume.csv` is located in the root directory alongside the Jupyter Notebook.
+
+Launch the notebook using:
+
+```bash
+jupyter notebook Metro_Traffic_Prediction.ipynb
+```
+
+## 🛠️ Tech Stack
+
+| Category                        | Technologies            |
+| ------------------------------- | ----------------------- |
+| **Programming Language**        | Python 3.8+             |
+| **Data Manipulation**           | Pandas, NumPy           |
+| **Data Visualization**          | Matplotlib, Seaborn     |
+| **Machine Learning**            | scikit-learn            |
+| **Machine Learning Algorithms** | `RandomForestRegressor` |
+| **Feature Scaling**             | `StandardScaler`        |
+| **Dataset Splitting**           | `train_test_split`      |
+| **Hyperparameter Tuning**       | `RandomizedSearchCV`    |
+| **Development Environment**     | Jupyter Notebook        |
