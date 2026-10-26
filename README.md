@@ -102,7 +102,7 @@ print(f"-> Predicted traffic: {predict_traffic(265.0, 3, 6, 1, 0,0,0,0,0,0,0,1,1
 ```
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Metro-Interstate-Traffic-Volume-Prediction/
@@ -115,7 +115,7 @@ Metro-Interstate-Traffic-Volume-Prediction/
 └── README.md                             # Project documentation
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up and run the project locally.
 
@@ -165,7 +165,7 @@ Launch the notebook using:
 jupyter notebook Metro_Traffic_Prediction.ipynb
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category                        | Technologies            |
 | ------------------------------- | ----------------------- |
